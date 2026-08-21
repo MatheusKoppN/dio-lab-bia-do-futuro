@@ -40,3 +40,12 @@ A reserva de emergência é um montante guardado exclusivamente para imprevistos
 
 ### Como lidar com renda variável/autônoma?
 * O cálculo da divisão 50/30/20 deve ser feito com base na **média dos últimos 3 a 6 meses** de faturamento, considerando sempre o menor valor registrado como piso de segurança.
+# Base de Conhecimento Expandida - Kofin
+
+## Mini Glossário Financeiro Simplificado
+
+* **Taxa Selic:** É a taxa básica de juros da economia brasileira. Ela serve como referência para quase todas as taxas de juros cobradas e pagas no país. Quando a Selic sobe, os rendimentos de renda fixa (como o Tesouro Selic) costumam render mais.
+* **CDI (Certificado de Depósito Interbancário):** É uma taxa muito próxima da Selic, usada pelos bancos nas operações entre si. Quando uma aplicação rende "100% do CDI", significa que ela acompanha quase exatamente a taxa Selic.
+* **Liquidez Diária:** A facilidade e velocidade com que você consegue transformar seu investimento de volta em dinheiro na conta. Ter "liquidez diária" significa que você pode resgatar o valor em qualquer dia útil (ideal para reserva de emergência).
+* **Juros Compostos:** Conhecidos como "juros sobre juros". No lado positivo, fazem o dinheiro guardado render cada vez mais ao longo do tempo. No lado negativo, fazem as dívidas de cartão ou cheque especial crescerem em bola de neve.
+* **Inflação (IPCA):** O aumento generalizado dos preços de produtos e serviços. O IPCA mede o custo de vida; se a inflação sobe, seu dinheiro perde poder de compra se ficar parado na conta sem render.
