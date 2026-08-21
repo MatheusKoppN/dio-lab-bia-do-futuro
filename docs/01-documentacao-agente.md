@@ -72,7 +72,7 @@ flowchart TD
 | Componente | Descrição |
 |------------|-----------|
 | Interface | *Web App interativo de chat construído com Streamlit* |
-| LLM | *GPT-4 acessado via API da OpenAI* |
+| LLM | *Gemini 1.5 Flash (via Google AI Studio API)* |
 | Base de Conhecimento | *Arquivos em JSON e CSV (fornecidos pelo projeto base com dados estruturados) combinados com arquivo Markdown (.md) contendo as diretrizes do método 50/30/20 e reserva de emergência e API da taxa SELIC* |
 | Validação | *Restrição de contexto no System Prompt (Grounding) e validação manual por testes de cenários* |
 
