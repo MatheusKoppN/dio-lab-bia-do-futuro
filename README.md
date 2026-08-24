@@ -97,3 +97,11 @@ python -m streamlit run src/app.py
 
 ***📜 Licença***
 Este projeto foi desenvolvido para fins educacionais e de portfólio.
+---
+
+## 📬 Contato
+
+Desenvolvido por **Matheus Kopp do Nascimento**. Entre em contato ou conecte-se comigo:
+
+- **Email:** [matheuskoppn@gmail.com](mailto:seu-email@dominio.com)
+- **LinkedIn:** https://www.linkedin.com/in/matheus-kopp-do-nascimento-426a783b5/
