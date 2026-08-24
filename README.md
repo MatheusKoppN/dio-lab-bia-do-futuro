@@ -1,149 +1,99 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 💵🤖 Kofin - Assistente de Educação e Organização Financeira
 
-## Contexto
-
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> Um assistente virtual inteligente e interativo construído com Python, Streamlit e a API do Google Gemini, focado em ajudar iniciantes a organizarem suas finanças pessoais de forma despojada e sem complicações.
 
 ---
 
-## O Que Você Deve Entregar
+## 📌 Sobre o Projeto
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+O **Kofin** é um chatbot interativo desenvolvido para simplificar a educação financeira. Ele analisa o perfil financeiro do usuário (ou simula dados pré-definidos) e oferece orientações baseadas no método **50/30/20**, além de calcular metas para reserva de emergência e integrar dados de mercado em tempo real, como a **Taxa Selic** obtida via API oficial do Banco Central do Brasil.
 
 ---
 
-### 2. Base de Conhecimento
+## 🛠️ Tecnologias Utilizadas
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- **Linguagem:** [Python 3.10+](https://www.python.org/)
+- **Interface Web:** [Streamlit](https://streamlit.io/)
+- **Modelo de IA:** Google Gemini API (`google-genai` SDK)
+- **Manipulação de Dados:** [Pandas](https://pandas.pydata.org/)
+- **Integração de APIs:** [Requests](https://requests.readthedocs.io/)
+- **Gerenciamento de Versão:** Git e GitHub
 
 ---
 
-### 3. Prompts do Agente
+## 📁 Estrutura do Repositório
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```text
+kofin_bot/
+├── .streamlit/
+│   └── secrets.toml          # Configuração segura de chaves (ignorado no Git)
+├── data/
+│   └── infos_ed_financeira.md # Base de conhecimento em Markdown
+├── docs/
+│   └── documentacao.md        # Documentação e prompt engineering do agente
+├── src/
+│   └── app.py                 # Código principal da aplicação Streamlit
+├── .gitignore                 # Arquivos e pastas ignorados pelo Git
+├── README.md                  # Documentação do repositório
+└── requirements.txt           # Dependências do projeto
 ```
 
----
+***🚀 Como Executar o Projeto***
+**Pré-requisitos**
+*Python 3.10 ou superior instalado.*
 
-## Dicas Finais
+*Chave de API do Google Gemini (obtida no Google AI Studio).*
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+***Passo a Passo***
+
+**Clone o repositório:**
+
+
+```
+git clone [https://github.com/seu-usuario/kofin_bot.git](https://github.com/seu-usuario/kofin_bot.git)
+cd kofin_bot
+```
+*Crie e ative um ambiente virtual (recomendado):*
+
+# Windows (PowerShell)
+```
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+# Linux/Mac
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+*Instale as dependências:*
+
+```
+pip install -r requirements.txt
+```
+
+*Configure a Chave de API:*
+Crie a pasta .streamlit na raiz e dentro dela o arquivo secrets.toml:
+
+```
+GEMINI_API_KEY = "SUA_CHAVE_AQUI"
+```
+*Rode a aplicação:*
+
+```
+python -m streamlit run src/app.py
+```
+
+***⚙️ Funcionalidades Principais***
+
+*Perfil Personalizado ou Simulado:* O usuário pode preencher renda e despesas manualmente na barra lateral ou alternar para perfis simulados para testes rápidos.
+
+*Integração com Banco Central:* Consulta automática da taxa Selic atualizada via API do BCB.
+
+*Chat Interativo:* Conversa em tempo real orientada por System Prompt ajustado para garantir respostas educativas, empáticas e seguras (sem recomendações de alto risco).
+
+*Proteção de Dados:* Gerenciamento seguro de credenciais via secrets.toml e regras no .gitignore.
+
+***📜 Licença***
+Este projeto foi desenvolvido para fins educacionais e de portfólio.
