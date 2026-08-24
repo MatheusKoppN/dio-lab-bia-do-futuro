@@ -12,12 +12,21 @@ O **Kofin** é um chatbot interativo desenvolvido para simplificar a educação 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem:** [Python 3.10+](https://www.python.org/)
-- **Interface Web:** [Streamlit](https://streamlit.io/)
-- **Modelo de IA:** Google Gemini API (`google-genai` SDK)
-- **Manipulação de Dados:** [Pandas](https://pandas.pydata.org/)
-- **Integração de APIs:** [Requests](https://requests.readthedocs.io/)
-- **Gerenciamento de Versão:** Git e GitHub
+* **Linguagem:** [Python 3.10+](https://www.python.org/)
+* **Interface Web:** [Streamlit](https://streamlit.io/)
+* **Modelo de IA:** Google Gemini API (`google-genai` SDK)
+* **Manipulação de Dados:** [Pandas](https://pandas.pydata.org/)
+* **Integração de APIs:** [Requests](https://requests.readthedocs.io/)
+* **Gerenciamento de Versão:** Git e GitHub
+
+---
+
+## ⚙️ Funcionalidades Principais
+
+* **Perfil Personalizado ou Simulado:** O usuário pode preencher renda e despesas manualmente na barra lateral ou alternar para perfis simulados para testes rápidos.
+* **Integração com Banco Central:** Consulta automática da taxa Selic atualizada via API do BCB.
+* **Chat Interativo:** Conversa em tempo real orientada por *System Prompt* ajustado para garantir respostas educativas, empáticas e seguras (sem recomendações de ativos de alto risco).
+* **Proteção de Dados:** Gerenciamento seguro de credenciais via `secrets.toml` e regras no `.gitignore`.
 
 ---
 
@@ -36,72 +45,81 @@ kofin_bot/
 ├── .gitignore                 # Arquivos e pastas ignorados pelo Git
 ├── README.md                  # Documentação do repositório
 └── requirements.txt           # Dependências do projeto
-```
-
-***🚀 Como Executar o Projeto***
-**Pré-requisitos**
-*Python 3.10 ou superior instalado.*
-
-*Chave de API do Google Gemini (obtida no Google AI Studio).*
-
-***Passo a Passo***
-
-**Clone o repositório:**
-
 
 ```
-git clone [https://github.com/seu-usuario/kofin_bot.git](https://github.com/seu-usuario/kofin_bot.git)
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+
+* Python 3.10 ou superior instalado.
+* Chave de API do Google Gemini (obtida no [Google AI Studio](https://aistudio.google.com/)).
+
+### Passo a Passo
+
+1. **Clone o repositório:**
+```bash
+git clone https://github.com/seu-usuario/kofin_bot.git
 cd kofin_bot
-```
-*Crie e ative um ambiente virtual (recomendado):*
 
-# Windows (PowerShell)
 ```
+
+
+2. **Crie e ative um ambiente virtual (recomendado):**
+* **Windows (PowerShell):**
+```powershell
 python -m venv venv
 .\venv\Scripts\activate
+
 ```
 
-# Linux/Mac
-```
+
+* **Linux / macOS:**
+```bash
 python3 -m venv venv
 source venv/bin/activate
-```
-
-*Instale as dependências:*
 
 ```
+
+
+
+
+3. **Instale as dependências:**
+```bash
 pip install -r requirements.txt
-```
-
-*Configure a Chave de API:*
-Crie a pasta .streamlit na raiz e dentro dela o arquivo secrets.toml:
 
 ```
+
+
+4. **Configure a Chave de API:**
+Crie a pasta `.streamlit` na raiz do projeto e dentro dela crie o arquivo `secrets.toml`:
+```toml
 GEMINI_API_KEY = "SUA_CHAVE_AQUI"
-```
-*Rode a aplicação:*
 
 ```
+
+
+5. **Execute a aplicação:**
+```bash
 python -m streamlit run src/app.py
+
 ```
 
-***⚙️ Funcionalidades Principais***
 
-*Perfil Personalizado ou Simulado:* O usuário pode preencher renda e despesas manualmente na barra lateral ou alternar para perfis simulados para testes rápidos.
 
-*Integração com Banco Central:* Consulta automática da taxa Selic atualizada via API do BCB.
+---
 
-*Chat Interativo:* Conversa em tempo real orientada por System Prompt ajustado para garantir respostas educativas, empáticas e seguras (sem recomendações de alto risco).
+## 📜 Licença
 
-*Proteção de Dados:* Gerenciamento seguro de credenciais via secrets.toml e regras no .gitignore.
+Este projeto foi desenvolvido para fins educacionais e de portfólio. Sinta-se livre para utilizar, modificar e contribuir!
 
-***📜 Licença***
-Este projeto foi desenvolvido para fins educacionais e de portfólio.
 ---
 
 ## 📬 Contato
 
 Desenvolvido por **Matheus Kopp do Nascimento**. Entre em contato ou conecte-se comigo:
 
-- **Email:** [matheuskoppn@gmail.com](mailto:seu-email@dominio.com)
-- **LinkedIn:** https://www.linkedin.com/in/matheus-kopp-do-nascimento-426a783b5/
+* **E-mail:** [matheuskoppn@gmail.com](https://www.google.com/search?q=mailto%3Amatheuskoppn%40gmail.com)
+* **LinkedIn:** [Matheus Kopp do Nascimento](https://www.linkedin.com/in/matheus-kopp-do-nascimento-426a783b5/)
